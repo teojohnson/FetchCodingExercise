@@ -17,7 +17,7 @@ object NetworkModule {
     @Provides
     fun providesRetrofit(): Retrofit {
         val retrofit = Retrofit.Builder()
-            .baseUrl("https://fetch-hiring.s3.amazonaws.com/hiring.json")
+            .baseUrl("https://fetch-hiring.s3.amazonaws.com/")
             .addConverterFactory(
                 Json.asConverterFactory(
                     "application/json; charset=UTF8".toMediaType()))
